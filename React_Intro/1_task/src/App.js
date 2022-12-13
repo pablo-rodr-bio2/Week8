@@ -9,18 +9,22 @@ const App = () => {
 
   const [tiles, setTiles] = useState([])
 
-  // const changeNumberTiles = (event) => {
+  const generateRandomcolor = () => {
+    return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+  }
 
-  //   event.target.textContent === '+' ?
-  //   setTiles(current => [...current, generateRandomcolor()]) :
-  //   setTiles(current => current.slice(0, -1))
+  const changeNumberTiles = (event) => {
 
-  // }
+    event.target.textContent === '+' ?
+    setTiles(current => [...current, generateRandomcolor()]) :
+    setTiles(current => current.slice(0, -1))
+
+  }
 
   return <div className='app'>
-    <Button tiles={tiles} setTiles={setTiles} value='+' />
+    <Button tiles={tiles} changeNumberTiles={changeNumberTiles} value='+' />
     <Counter number={tiles.length}/>
-    <Button tiles={tiles} setTiles={setTiles} value='-' />
+    <Button tiles={tiles} changeNumberTiles={changeNumberTiles} value='-' />
 
     <List tiles={tiles} />
   </div>
