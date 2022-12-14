@@ -1,4 +1,6 @@
-const Button = ({ totalTiles, setTiles, value }) => {
+const Button = ({ totalTiles, setTiles, children }) => {
+
+    
 
     const generateRandomcolor = () => {
         return `#${Math.floor(Math.random()*16777215).toString(16)}`;
@@ -12,9 +14,9 @@ const Button = ({ totalTiles, setTiles, value }) => {
     
       }
 
-    const isDisabled = ((value === '+' && totalTiles === 9) || (value === '-' && totalTiles === 0)) 
+    const isDisabled = ((children === '+' && totalTiles === 9) || (children === '-' && totalTiles === 0)) 
 
-    return <button onClick={handleNumberTiles} className="btn__number" disabled={isDisabled}>{value}</button>
+    return <button onClick={handleNumberTiles} className="btn__number" disabled={isDisabled}>{children}</button>
 }
 
 export default Button
