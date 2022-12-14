@@ -2,14 +2,17 @@ const Button = ({ totalTiles, setTiles, children }) => {
 
     
 
-    const generateRandomcolor = () => {
-        return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+    const getRandomLightColor = () => {
+        let r = 150 + Math.round(100 * Math.random());
+        let g = 150 + Math.round(100 * Math.random());
+        let b = 150 + Math.round(100 * Math.random());
+        return `rgb(${r}, ${g}, ${b})`;
       }
 
     const handleNumberTiles = (event) => {
 
         event.target.textContent === '+' ?
-        setTiles(current => [...current, generateRandomcolor()]) :
+        setTiles(current => [...current, getRandomLightColor()]) :
         setTiles(current => current.slice(0, -1))
     
       }
