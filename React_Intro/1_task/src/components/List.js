@@ -5,7 +5,7 @@ const List = ({ tiles }) => {
     return (
         <>
             {tiles.map(color => {
-                return <Tile color={color}/>
+                return <Tile key={color} color={color}/>
             })}
         </>
 
