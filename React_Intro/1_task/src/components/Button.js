@@ -11,9 +11,9 @@ const Button = ({ totalTiles, setTiles, children }) => {
 
     const handleNumberTiles = (event) => {
 
-        event.target.textContent === '+' ?
-        setTiles(current => [...current, getRandomLightColor()]) :
-        setTiles(current => current.slice(0, -1))
+        event.target.textContent === '+' 
+        ? setTiles(current => [...current, getRandomLightColor()])
+        : setTiles(current => current.slice(0, -1))
     
       }
 
