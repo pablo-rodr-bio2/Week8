@@ -52,13 +52,15 @@ export const useWeatherData = (shouldRun, position) => {
                 // get locationId from position's lat and long
                 const response = await fetch(`${URI_locationID}apikey=${API_KEY}&q=${position.lat},${position.long}`)
                 const location = await response.json()
+
                 const locationId = location.Key
+
 
                 // get weather report from locationId
                 const res = await fetch(`${URI_forecast}/${locationId}?apikey=${API_KEY}&details=true`)
                 const weatherData = await res.json()
-
-                setData(weatherData.DailyForecasts)
+                const newData = {localizedName: location.LocalizedName, dailyForecasts: weatherData.DailyForecasts}
+                setData(() => newData)
                 setLoading(false)
 
             } catch (error) {
@@ -71,7 +73,7 @@ export const useWeatherData = (shouldRun, position) => {
 
         fetchData()
 
-    }, [shouldRun, position])
+    }, [shouldRun])
 
     return { data, loading, error }
 }
