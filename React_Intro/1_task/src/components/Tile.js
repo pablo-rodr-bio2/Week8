@@ -1,5 +1,9 @@
 const Tile = ({ color }) => {
-    return <div className='tile' style={{backgroundColor: color}} >{color}</div>
+
+    const toggle = (e) => {
+        console.log(e.target)
+    }
+    return <button onClick={(e) => toggle(e)} className='tile' style={{backgroundColor: color}} >{color}</button>
 }
 
 export default Tile

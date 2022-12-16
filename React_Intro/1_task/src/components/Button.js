@@ -1,7 +1,8 @@
 const Button = ({ totalTiles, setTiles, children }) => {
 
     
-
+      // move it to parent //
+      // being
     const getRandomLightColor = () => {
         let r = 150 + Math.round(100 * Math.random());
         let g = 150 + Math.round(100 * Math.random());
@@ -17,8 +18,10 @@ const Button = ({ totalTiles, setTiles, children }) => {
     
       }
 
+    
     const isDisabled = ((children === '+' && totalTiles === 9) || (children === '-' && totalTiles === 0)) 
 
+    // end
     return <button onClick={handleNumberTiles} className="btn__number" disabled={isDisabled}>{children}</button>
 }
 

@@ -1,0 +1,129 @@
+@import url(variables.css);
+
+body {
+  margin: 0;
+  font-family: var(--fontFamily);
+  color: var(--textColor);
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bgColor);
+}
+
+.container {
+  width: var(--containerWidth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--containerPaddingTop);
+}
+
+.container__title {
+  font-size: var(--titleFontSize);
+  text-align: center;
+}
+
+.container__city {
+  text-align: center;
+  font-weight: 200;
+}
+
+.container__weather {
+  padding-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 200px);
+  justify-items: center;
+}
+
+.weatherCard {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  background-color: rgb(173, 236, 176);
+  color: #2e2e2e;
+  width: 150px;
+  height: 250px;
+  border-radius: var(--weatherBorderRadius);
+  box-shadow: var(--weatherBoxShadow);
+}
+
+.weatherCard img {
+  margin-top: 20px;
+}
+
+.weatherCard__date {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.weatherCard__condition {
+  font-size: 10px;
+  font-weight: 200;
+  margin-top: 20px;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.weatherCard__temperature {
+  margin-top: 20px;
+}
+
+.weatherCard__temperature_max {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.weatherCard__temperature_min {
+  font-size: 20px;
+  font-weight: 200;
+  color: #4e4e4e;
+  opacity: 0.8;
+}
+
+
+
+.hourglass{
+  display:block;
+  background: var(--bgColor);
+  margin:3em auto;
+  width:2em;
+  height:4em;
+  animation:hourglass 1s linear infinite;
+}
+
+.outer{
+  fill: blue;
+}
+
+.middle{
+  fill:var(--bgColor);
+}
+
+@keyframes hourglass{
+  0%{
+      transform:rotate(0deg);
+      box-shadow:
+          inset blue 0 -0em 0 0,
+          inset var(--bgColor) 0 -2em 0 0,
+          inset blue 0 -4em 0 0;
+  }
+  80%{
+      transform:rotate(0deg);
+      box-shadow:
+          inset blue 0 -2em 0 0,
+          inset var(--bgColor) 0 -2em 0 0,
+          inset blue 0 -2em 0 0;
+  }
+  100%{
+      transform:rotate(180deg);
+      box-shadow:
+          inset blue 0 -2em 0 0,
+          inset var(--bgColor) 0 -2em 0 0,
+          inset blue 0 -2em 0 0;
+  }
+}

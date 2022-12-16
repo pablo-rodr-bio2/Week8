@@ -2,33 +2,34 @@ import React, { useState } from 'react';
 import Light from "./Light";
 import "./styles.css";
 
+const colors = ['red', 'yellow', 'blue', 'green']
+
+const colorsMap = [...colors, ...colors]
 
 export default function App() {
 
   const [isTurnedOn, setIsTurnedOn] = useState(true)
 
-  const colors = ['red', 'yellow', 'blue', 'green']
-  // const colorsMap = [...colors, ...colors]
-  const colorsMap = [...colors.concat(...colors)]
-
   const handleTurn = () => {
-    setIsTurnedOn(!isTurnedOn)
+    setIsTurnedOn((value) => !value)
   }
-
-  const buttonText = isTurnedOn ? 'Turn off' : 'Turn on'
+ 
 
   return (
     <main>
       <section className="lights">
 
-        { colorsMap.map((color, index) => {
-           return <Light key={color + index} color={isTurnedOn ? color : 'off'} />
-        })}
+        {
+          colorsMap.map((color, index) =>
+                      <Light key={index} color={isTurnedOn ? color : 'off'} />)
+        }
 
       </section>
+
       <section className="buttons">
-        <button onClick={()=> handleTurn()}>{buttonText}</button>
+        <button onClick={handleTurn}>{isTurnedOn ? 'Turn off' : 'Turn on'}</button>
       </section>
+
     </main>
   );
 }

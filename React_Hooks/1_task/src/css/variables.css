@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+:root {
+  --bgColor: #c9b1ee;
+  --containerPaddingTop: 150px;
+  --fontFamily: 'Dosis', sans-serif;
+
+  --titleFontSize: 3rem;
+  --textColor: rgb(49, 49, 49);
+
+  --containerWidth: 700px
+
+  --weatherPaddingTop: 50px;
+
+  --weatherSize: 200px;
+  --weatherBoxShadow: 3px 0px 21px -3px rgba(0,0,0,0.1);
+  --weatherTextShadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  --weatherBorderRadius: 0.5rem;
+}

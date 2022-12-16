@@ -1,15 +1,10 @@
 import Tile from './Tile'
 
-const List = ({ tiles }) => {
-
-    return (
+const List = ({ tiles }) => (
         <>
-            {tiles.map(color => {
-                return <Tile key={color} color={color}/>
-            })}
+            {tiles.map(color => <Tile key={color} color={color}/>)}
         </>
 
-    )
-}
+)
 
 export default List
