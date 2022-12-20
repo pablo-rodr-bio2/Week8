@@ -1,12 +1,10 @@
 import React from 'react'
 import Weathercard from './Weathercard'
-import { useWeatherData } from './CustomHooks'
 import Hourglass from './Hourglass'
 
-function WeatherContainer({ didGetPosition, position }) {
+function WeatherContainer({ data, loading }) {
 
-    const { data, loading, error } = useWeatherData(didGetPosition, position)
-    console.log(data)
+   
     return (
         <>
 
@@ -18,13 +16,11 @@ function WeatherContainer({ didGetPosition, position }) {
                     <h2 className="container__city">{data.localizedName}</h2>
                     <section className="container__weather">
                         {
-                            data.dailyForecasts.map(dailyForecast => <Weathercard dailyForecast={dailyForecast}/>)
+                            data.dailyForecasts.map(dailyForecast => <Weathercard key={dailyForecast.id} dailyForecast={dailyForecast}/>)
                         }
                     </section>
-                </>}
-
-
-
+                </>
+            }
 
         </>
 

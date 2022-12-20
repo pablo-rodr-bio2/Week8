@@ -1,102 +1,105 @@
 {
-    "tasks": [
-      {
-        "id": 1,
-        "Date": "2022-12-18T07:00:00+03:00",
-        "EpochDate": 1671336000,
-        "Temperature": {
-          "Minimum": {
-            "Value": 50,
-            "Unit": "F",
-            "UnitType": 18
+  "tasks": [
+    {
+      "LocalizedName": "Cornellà de Llobregat",
+      "DailyForecasts": [
+        {
+          "id": 1,
+          "Date": "2022-12-18T07:00:00+03:00",
+          "EpochDate": 1671336000,
+          "Temperature": {
+            "Minimum": {
+              "Value": 50,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
           },
-          "Maximum": {
-            "Value": 70,
-            "Unit": "F",
-            "UnitType": 18
-          }
-        },
-        "Day": {
-          "Icon": 3,
-          "IconPhrase": "Partly sunny",
-          "HasPrecipitation": false
-        },
-        "Night": {
-          "Icon": 34,
-          "IconPhrase": "Mostly clear",
-          "HasPrecipitation": false
-        },
-        "Sources": [
-          "AccuWeather"
-        ],
-        "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us",
-        "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us"
-      },
-      {
-        "id": 2,
-        "Date": "2022-12-16T07:00:00+03:00",
-        "EpochDate": 1671163200,
-        "Temperature": {
-          "Minimum": {
-            "Value": 54,
-            "Unit": "F",
-            "UnitType": 18
+          "Day": {
+            "Icon": 3,
+            "IconPhrase": "Partly sunny",
+            "HasPrecipitation": false
           },
-          "Maximum": {
-            "Value": 71,
-            "Unit": "F",
-            "UnitType": 18
-          }
-        },
-        "Day": {
-          "Icon": 7,
-          "IconPhrase": "Cloudy",
-          "HasPrecipitation": false
-        },
-        "Night": {
-          "Icon": 35,
-          "IconPhrase": "Partly cloudy",
-          "HasPrecipitation": false
-        },
-        "Sources": [
-          "AccuWeather"
-        ],
-        "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us",
-        "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us"
-      },
-      {
-        "id": 3,
-        "Date": "2022-12-17T07:00:00+03:00",
-        "EpochDate": 1671249600,
-        "Temperature": {
-          "Minimum": {
-            "Value": 52,
-            "Unit": "F",
-            "UnitType": 18
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
           },
-          "Maximum": {
-            "Value": 70,
-            "Unit": "F",
-            "UnitType": 18
-          }
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us"
         },
-        "Day": {
-          "Icon": 4,
-          "IconPhrase": "Intermittent clouds",
-          "HasPrecipitation": false
+        {
+          "id": 2,
+          "Date": "2022-12-16T07:00:00+03:00",
+          "EpochDate": 1671163200,
+          "Temperature": {
+            "Minimum": {
+              "Value": 54,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 71,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 7,
+            "IconPhrase": "Cloudy",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 35,
+            "IconPhrase": "Partly cloudy",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us"
         },
-        "Night": {
-          "Icon": 34,
-          "IconPhrase": "Mostly clear",
-          "HasPrecipitation": false
+        {
+          "id": 3,
+          "Date": "2022-12-17T07:00:00+03:00",
+          "EpochDate": 1671249600,
+          "Temperature": {
+            "Minimum": {
+              "Value": 52,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 4,
+            "IconPhrase": "Intermittent clouds",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us"
         },
-        "Sources": [
-          "AccuWeather"
-        ],
-        "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us",
-        "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us"
-      },
-      {
+        {
           "id": 4,
           "Date": "2022-12-17T07:00:00+03:00",
           "EpochDate": 1671249600,
@@ -160,5 +163,172 @@
           "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us",
           "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us"
         }
-    ]
-  }
+      ]
+    },
+    {
+      "LocalizedName": "Barcelona",
+      "DailyForecasts": [
+        {
+          "id": 1,
+          "Date": "2022-12-18T07:00:00+03:00",
+          "EpochDate": 1671336000,
+          "Temperature": {
+            "Minimum": {
+              "Value": 50,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 3,
+            "IconPhrase": "Partly sunny",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us"
+        },
+        {
+          "id": 2,
+          "Date": "2022-12-16T07:00:00+03:00",
+          "EpochDate": 1671163200,
+          "Temperature": {
+            "Minimum": {
+              "Value": 54,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 71,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 7,
+            "IconPhrase": "Cloudy",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 35,
+            "IconPhrase": "Partly cloudy",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=2&lang=en-us"
+        },
+        {
+          "id": 3,
+          "Date": "2022-12-17T07:00:00+03:00",
+          "EpochDate": 1671249600,
+          "Temperature": {
+            "Minimum": {
+              "Value": 52,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 4,
+            "IconPhrase": "Intermittent clouds",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us"
+        },
+        {
+          "id": 4,
+          "Date": "2022-12-17T07:00:00+03:00",
+          "EpochDate": 1671249600,
+          "Temperature": {
+            "Minimum": {
+              "Value": 52,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 4,
+            "IconPhrase": "Intermittent clouds",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=3&lang=en-us"
+        },
+        {
+          "id": 5,
+          "Date": "2022-12-18T07:00:00+03:00",
+          "EpochDate": 1671336000,
+          "Temperature": {
+            "Minimum": {
+              "Value": 50,
+              "Unit": "F",
+              "UnitType": 18
+            },
+            "Maximum": {
+              "Value": 70,
+              "Unit": "F",
+              "UnitType": 18
+            }
+          },
+          "Day": {
+            "Icon": 3,
+            "IconPhrase": "Partly sunny",
+            "HasPrecipitation": false
+          },
+          "Night": {
+            "Icon": 34,
+            "IconPhrase": "Mostly clear",
+            "HasPrecipitation": false
+          },
+          "Sources": [
+            "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us",
+          "Link": "http://www.accuweather.com/en/tr/alaybey/1312890/daily-weather-forecast/1312890?day=4&lang=en-us"
+        }
+      ]
+    }
+  ]
+}
