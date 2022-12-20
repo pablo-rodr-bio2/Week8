@@ -1,46 +1,33 @@
 import Hourglass from './components/Hourglass';
 import WeatherContainer from './components/WeatherContainer';
 import './css/style.css'
-import { useCurrentPosition, useWeatherData } from './components/CustomHooks'
+import { useCurrentPosition, useWeatherData } from './hooks/CustomHooks'
 import SearchCity from './components/SearchCity';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-
+// SearchCity should notify App to ask actions, not to delegate actions from App to SearchCity
 function App() {
+
+  const [city, setCity] = useState()
 
   const userPosition = useCurrentPosition()
 
-  const [ weatherData, setWeatherData ] = useState()
+  const { weatherData, loading, error } = useWeatherData(userPosition.success, userPosition.position, city)
 
-  const { data, loading, error } = useWeatherData(userPosition.success, userPosition.position)
+  console.log('rendered')
 
-  useEffect(() => {
-    if(userPosition.success) {
-      setWeatherData(data)
-    } 
-  }, [userPosition.success, data])
+  const handleCityName = (event, cityName) => {
+    event.preventDefault();
+    setCity(cityName)
+  }
 
-  return (
-    <div className="App">
-      <main className="page">
-        <section className="container">
-          { userPosition.error
-          ? <>
-              <SearchCity setWeatherData={setWeatherData}/>
-              { weatherData &&
-                <WeatherContainer data={weatherData} loading={loading}/>
-              }
-            </>
-          : !userPosition.success
-            ? <Hourglass /> 
-            : <WeatherContainer data={weatherData} loading={loading}/>
-          } 
-        </section>
-      </main>
+  if(weatherData) return <WeatherContainer data={weatherData} loading={loading} error={error} />
+
+  if(userPosition.error) return  <SearchCity handleCityName={handleCityName} />
+
+  if(!userPosition.success) return <Hourglass />
 
 
-    </div>
-  );
 }
 
 export default App;
